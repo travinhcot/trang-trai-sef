@@ -6,7 +6,7 @@ Welcome to the **Trang Trại SEF** (SEF Farm) project repository. This guide wi
 
 ---
 
-##🛠️ Installation & Setup Guide
+**Installation & Setup Guide**
 
 Follow these steps to get the environment ready on your local machine.
 1. Prerequisites
@@ -36,7 +36,7 @@ Bash
 
 npm install
 
-🚀 Running the Project
+**Running the Project**
 Start the Web Application
 
 Once the installation is finished, you can launch the local development server:
@@ -48,7 +48,7 @@ npm run dev
 
     Stop the Server: Press Ctrl + C in your terminal to stop the application.
 
-📁 Project Structure (Quick Look)
+** Project Structure (Quick Look)**
 
     src/: Contains the main source code for the web app.
 
