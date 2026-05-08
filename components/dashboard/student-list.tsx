@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { ChevronDown, ChevronUp } from 'lucide-react'
@@ -136,7 +136,7 @@ export function StudentList({ filters }: StudentListProps) {
         </thead>
         <tbody>
           {filteredStudents.map((student) => (
-            <div key={student.id} className="space-y-0">
+            <React.Fragment key={student.id}>
               <tr className="border-b border-border hover:bg-blue-50 dark:hover:bg-blue-950/20 transition">
                 <td className="py-4 px-4 text-foreground">{student.name}</td>
                 <td className="py-4 px-4 text-foreground/70">{student.class}</td>
@@ -190,7 +190,7 @@ export function StudentList({ filters }: StudentListProps) {
                   </td>
                 </tr>
               )}
-            </div>
+            </React.Fragment>
           ))}
         </tbody>
       </table>

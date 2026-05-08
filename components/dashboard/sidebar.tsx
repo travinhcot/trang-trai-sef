@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { BarChart3, AlertCircle, Users, Upload, Settings, LogOut } from 'lucide-react'
+import { BarChart3, AlertCircle, Users, Upload, Settings, HelpCircle, LogOut } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
@@ -12,6 +12,7 @@ const navItems = [
   { href: '/dashboard/students', label: 'Students', icon: Users },
   { href: '/dashboard/upload', label: 'Data Upload', icon: Upload },
   { href: '/dashboard/settings', label: 'Settings', icon: Settings },
+  { href: '/dashboard/help', label: 'Help & Docs', icon: HelpCircle },
 ]
 
 export function Sidebar() {
@@ -21,10 +22,10 @@ export function Sidebar() {
     <aside className="w-64 bg-sidebar border-r border-sidebar-border flex flex-col">
       {/* Logo */}
       <div className="p-6 border-b border-sidebar-border flex items-center gap-2">
-        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center text-white font-bold">
-          SRD
+        <div className="w-15 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center text-white font-bold">
+          ARSPS
         </div>
-        <h1 className="text-lg font-bold text-sidebar-foreground">StudentCare</h1>
+        <h1 className="text-lg font-bold text-sidebar-foreground">Trang Trai SEF</h1>
       </div>
 
       {/* Navigation */}
